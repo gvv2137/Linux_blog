@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+{% include "head.html" %}
+
+<body>
+   <div class="goToTop" style="display: block; opacity: 0.5;">
+		<a href="https://fb.me/NoobLinuxLab" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+	</div>
+	
+
+
+	<div class="contactsidebar" style="display: block; opacity: 0.5;" class="ng-cloak>
+	
+	  <i class="fa fa-phone fa-lg" ><span ng-cloak>9511609361</span></i>
+	</div>
+
+
+    {% include 'header.html' %}
+
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% include 'footer.html' %}
+    {% include 'scripts.html' %}
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <div class="container">
+      <div class="row">
+
+        <main class="posts-listing col-lg-8">
+          <div class="container">
+            <div class="row">
+            <h2>Terms & Conditions</h2>
+            
+
+              <p>Use of this site and by joining this site as a member,
+              you agree these terms and conditions and site usage guidelines.
+              Failing to adhere to any of the below will result in your account being warned/banned and/or maybe disabled/deleted.</p>
+               
+            <h2>Guidelines & Purpose</h2>
+            <p>Nooblinux is a place designed to share information relating to the computers, operating systems, programming and other technology information. All this site content (guides, comments, forum posts etc.) is distributed in the hope that it will be helpful and useful
+            </p>
+            <h2>Site Rules & Usage</h2>
+                <p>1) Search before posting
+                        Use search functions and check what is discussed before your topic.<br>
+
+                    2) Be polite and respect other users
+                        No cursing, flaming, racism or personal attacks.<br>
+
+                    3) Use the English language<br>
+
+                    4) Do not post warez or pornographic material<br>
+
+                    5) Do not spam
+                        If you wish to advertise a products, contact us. Do not post it in the site, it will be removed and you are maeby banned.<br>
+
+
+                    6) Don’t post copyrighted materials or do other things that will obviously lead to legal trouble<br>
+
+                    7) Help others if you can
+                        This website exists because people are helping each other<br>
+                </p>
+            
+            
+                  </div>
+          </div>
+        </main>
+        {% include 'sidebar.html' with most_recent=most_recent category_count=category_count %}
+  </div>
+  </div>
+
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+<div class="row">
+
+
+    <main class="posts-listing col-lg-8">
+      <div class="container">
+
+
+<h2>This is the results of your search</h2><br>
+{% for post in queryset %}
+    <strong><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></strong>
+    <hr>
+{% endfor %}
+
+</div>
+</main>
+{% include 'sidebar.html' with most_recent=most_recent category_count=category_count %}
+</div>
+</div>
+
+{% endblock %}

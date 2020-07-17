@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <div class="container">
+      <div class="row">
+
+        <main class="posts-listing col-lg-8">
+          <div class="container">
+            <div class="row">
+
+
+
+            <h1>Privacy policy:</h1>
+            <br />
+            <hr>
+                <p>We must inform you that the most advertising programs (including Google) use cookies to keep track of visitors. 
+                You can disable cookies if you like, but that will limit your experience on this site.</p>
+
+            <p>We respect your privacy and do our best to keep your personal information confidential.</p>
+            <p>If you have any questions regarding the privacy policy of Linux Scoop then you may contact us at graut5421@gmail.com</p>
+            <o>Last updated Sun, 7 jul 2020 03:28</p>
+
+
+                </div>
+          </div>
+        </main>
+        {% include 'sidebar.html' with most_recent=most_recent category_count=category_count %}
+  </div>
+  </div>
+
+{% endblock content %}
+
+

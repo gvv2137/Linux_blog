@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <div class="container">
+      <div class="row">
+
+        <main class="posts-listing col-lg-8">
+          <div class="container">
+            <div class="row">
+
+
+
+            <h1>About US</h1>
+            <p>
+
+              NoobLinuxLab is the site dedicated for Linux and Open Source information sharing.
+              It also allow user to submit video about linux distribustion review, open source application review,
+              open source apps how to and videos related to linux and open source.</p>
+
+
+              <p>I am a student at Computer Science, in Amravati. And I am a *nix addict.
+                Please notify me if you find any typo/grammar/language mistakes.
+                English is not my mother tongue.</p>
+
+                </div>
+          </div>
+        </main>
+        {% include 'sidebar.html' with most_recent=most_recent category_count=category_count %}
+  </div>
+  </div>
+
+{% endblock content %}
